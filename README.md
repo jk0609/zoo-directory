@@ -41,16 +41,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 2. Layout
   * Animal model with attributes:
     1. Name(string)
-    2. Age(string)
+    2. Age(number)
     3. Diet(string)
     4. Location(string)
     5. Caretakers(number)
     6. Sex(string)
     7. Likes(string)
     8. Dislikes(string)
+    9. Admission Date(date)
   * new-animal component with form and button with click function that creates a new Animal class object and adds it to array of existing animals.
   * update-animal component that contains ngModel relationships with existing animal attributes to update them dynamically.
   * animal-list component that lists all current animal objects and contains buttons to trigger the update component.
+  * age pipe, filters animals based on whether their age is >2 or <=2.
 
 3. UX/UI
   * Include and modify bootstrap.
