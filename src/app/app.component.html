@@ -1,6 +1,8 @@
 <div class='container'>
   <h1>The Best Zoo</h1>
   <animal-list [childAnimalList]='animals' (updateAnimalClick)=(updateAnimal($event))></animal-list>
-  <hr>
+
+  <new-animal (newAnimalSender)='addNewAnimal($event)'></new-animal>
+
   <update-animal *ngIf='selectedAnimal' [childAnimal]='selectedAnimal' (finishedUpdatingSender)='finishUpdate()'></update-animal>
 </div>

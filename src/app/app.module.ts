@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FormsModule }  from '@angular/forms';
 import { AnimalListComponent }  from './components/animal-list.component';
-// import { NewAnimalComponent }  from './components/new-animal.component';
+import { NewAnimalComponent }  from './components/new-animal.component';
 import { UpdateAnimalComponent }  from './components/update-animal.component';
 // import { AgePipe } from './pints-remaining.pipe';
 
@@ -11,7 +11,7 @@ import { UpdateAnimalComponent }  from './components/update-animal.component';
   declarations: [
     AppComponent,
     AnimalListComponent,
-    // NewAnimalComponent,
+    NewAnimalComponent,
     UpdateAnimalComponent,
     // AgePipe
   ],

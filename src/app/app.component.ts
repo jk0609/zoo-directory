@@ -23,4 +23,8 @@ export class AppComponent {
     this.selectedAnimal = null;
   }
 
+  addNewAnimal(animal){
+    this.animals.push(animal);
+  }
+
 }
