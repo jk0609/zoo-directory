@@ -19,4 +19,8 @@ export class AppComponent {
     this.selectedAnimal = animal;
   }
 
+  finishUpdate(){
+    this.selectedAnimal = null;
+  }
+
 }

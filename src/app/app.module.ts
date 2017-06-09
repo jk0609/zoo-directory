@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { FormsModule }  from '@angular/forms';
 import { AnimalListComponent }  from './components/animal-list.component';
 // import { NewAnimalComponent }  from './components/new-animal.component';
-// import { UpdateAnimalComponent }  from './components/update-animal.component';
+import { UpdateAnimalComponent }  from './components/update-animal.component';
 // import { AgePipe } from './pints-remaining.pipe';
 
 @NgModule({
@@ -12,7 +12,7 @@ import { AnimalListComponent }  from './components/animal-list.component';
     AppComponent,
     AnimalListComponent,
     // NewAnimalComponent,
-    // UpdateAnimalComponent,
+    UpdateAnimalComponent,
     // AgePipe
   ],
   imports: [

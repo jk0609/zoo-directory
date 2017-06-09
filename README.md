@@ -57,3 +57,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 3. UX/UI
   * Include and modify bootstrap.
   * Custom styling.
+
+4. Future Changes
+  * Location selection for new animal and update forms should be a select form.

@@ -1,4 +1,6 @@
-<h1>The Best Zoo</h1>
-<animal-list [childAnimalList]='animals' (updateAnimalClick)=(updateAnimal($event))></animal-list>
-
-<h3 *ngIf='selectedAnimal'>{{selectedAnimal.name}}</h3>
+<div class='container'>
+  <h1>The Best Zoo</h1>
+  <animal-list [childAnimalList]='animals' (updateAnimalClick)=(updateAnimal($event))></animal-list>
+  <hr>
+  <update-animal *ngIf='selectedAnimal' [childAnimal]='selectedAnimal' (finishedUpdatingSender)='finishUpdate()'></update-animal>
+</div>

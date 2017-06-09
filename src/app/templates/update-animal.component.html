@@ -1,0 +1,44 @@
+
+<div>
+  <h3>Update {{childAnimal.animalName}}'s Info</h3>
+  <div class='form-group'>
+    <label>Enter Animal Name:</label>
+    <input [(ngModel)]="childAnimal.animalName">
+  </div>
+  <div class='form-group'>
+    <label>Enter Animal Age:</label>
+    <input [(ngModel)]="childAnimal.age" type='number'>
+  </div>
+  <div class='form-group'>
+    <label>Enter Animal Diet:</label>
+    <select [(ngModel)]="childAnimal.diet">
+      <option value='Carnivore'>Carnivore</option>
+      <option value='Herbivore'>Herbivore</option>
+      <option value='Omnivore'>Omnivore</option>
+    </select>
+  </div>
+  <div class='form-group'>
+    <label>Enter Animal Location:</label>
+    <input [(ngModel)]="childAnimal.location">
+  </div>
+  <div class='form-group'>
+    <label>Enter Number of Caretakers:</label>
+    <input [(ngModel)]="childAnimal.caretakers" type='number'>
+  </div>
+  <div class='form-group'>
+    <label>Enter Animal Sex:</label>
+    <select [(ngModel)]="childAnimal.sex">
+      <option value='Male'>Male</option>
+      <option value='Female'>Female</option>
+    </select>
+  </div>
+  <div class='form-group'>
+    <label>Enter Animal Likes:</label>
+    <input [(ngModel)]="childAnimal.likes">
+  </div>
+  <div class='form-group'>
+    <label>Enter Animal Dislikes:</label>
+    <input [(ngModel)]="childAnimal.dislikes">
+  </div>
+  <button class="btn btn-primary"(click)="finishedUpdatingButton()">Save</button>
+</div>
