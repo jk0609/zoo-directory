@@ -1,28 +1,57 @@
-# Zoo
+# Zoo Animal Directory (Week 3 Advanced JS Project)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
+#### By Jonathon Kang
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Exercise in Angular. This project emulates a single page internal site for zoo employees that lists out a simulated database of animals with their assorted attributes. Components allow for the dynamic adding of new animals and editing of existing ones.
 
-## Code scaffolding
+## Prerequisites
+* Node.js with NPM
+* Angular 2
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+## Setup/Installation Requirements
+1. Clone the directory to your local machine and navigate to project root directory.
+2. Open your Node.JS terminal and run $ npm install.
+3. Run $ ng serve to initiate the directory and take it live at localhost:4200.
 
-## Build
+## Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+HTML/CSS
+Bootstrap
+Javascript/Node.JS
+Angular 2
 
-## Running unit tests
+### License
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Copyright 2017 Jonathon Kang
 
-## Running end-to-end tests
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-## Further help
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Planning
+1. Configuration/dependencies
+  * Node.js/npm
+  * Angular 2
+  * Angular-Bootstrap
+
+2. Layout
+  * Animal model with attributes:
+    1. Name(string)
+    2. Age(string)
+    3. Diet(string)
+    4. Location(string)
+    5. Caretakers(number)
+    6. Sex(string)
+    7. Likes(string)
+    8. Dislikes(string)
+  * new-animal component with form and button with click function that creates a new Animal class object and adds it to array of existing animals.
+  * update-animal component that contains ngModel relationships with existing animal attributes to update them dynamically.
+  * animal-list component that lists all current animal objects and contains buttons to trigger the update component.
+
+3. UX/UI
+  * Include and modify bootstrap.
+  * Custom styling.
