@@ -1,5 +1,6 @@
 export class Animal {
-  public date = new Date;
+  dateVar = new Date;
+  public date = (this.dateVar.getMonth()+1).toString()+'/'+this.dateVar.getDate().toString()+'/'+this.dateVar.getFullYear().toString();
   constructor(
     public name:string,
     public age:number,

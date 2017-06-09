@@ -1,0 +1,27 @@
+<h3>All Animals</h3>
+<table class='table-striped table-bordered'>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Diet</th>
+    <th>Location</th>
+    <th>Caretakers</th>
+    <th>Sex</th>
+    <th>Likes</th>
+    <th>Dislikes</th>
+    <th>Date Received</th>
+    <th>Update</th>
+  </tr>
+  <tr *ngFor='let animal of childAnimalList'>
+    <td>{{animal.name}}</td>
+    <td>{{animal.age}}</td>
+    <td>{{animal.diet}}</td>
+    <td>{{animal.location}}</td>
+    <td>{{animal.caretakers}}</td>
+    <td>{{animal.sex}}</td>
+    <td>{{animal.likes}}</td>
+    <td>{{animal.dislikes}}</td>
+    <td>{{animal.date}}</td>
+    <td><button (click)='updateAnimal(animal)' class='btn btn-info'>Update</button></td>
+  </tr>
+</table>
