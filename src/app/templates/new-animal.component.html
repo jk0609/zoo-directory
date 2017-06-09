@@ -40,5 +40,5 @@
     <label>Enter Animal Dislikes:</label>
     <input #newDislikes>
   </div>
-  <button class="btn btn-primary"(click)="finishedNewButton(newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value)">Save</button>
+  <button class="btn btn-primary"(click)="finishedNewButton(newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newName.value='';newAge.value='';newDiet.value='';newLocation.value='';newCaretakers.value='';newSex.value='';newLikes.value='';newDislikes.value=''">Save</button>
 </div>

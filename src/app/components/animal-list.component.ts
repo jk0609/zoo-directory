@@ -14,7 +14,6 @@ export class AnimalListComponent {
 
   ageCondition: 'all';
   dietCondition: 'all';
-  // totalCaretakers = 0;
 
   updateAnimal(animal){
     this.updateAnimalClick.emit(animal);
