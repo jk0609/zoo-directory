@@ -1,6 +1,6 @@
 <div class='container'>
   <h1>The Best Zoo</h1>
-  <animal-list [childAnimalList]='animals' (updateAnimalClick)=(updateAnimal($event))></animal-list>
+  <animal-list [childAnimalList]='animals' [caretakerTotal]='caretakerTotal' (updateAnimalClick)=(updateAnimal($event))></animal-list>
 
   <new-animal (newAnimalSender)='addNewAnimal($event)'></new-animal>
 

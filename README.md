@@ -48,7 +48,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     6. Sex(string)
     7. Likes(string)
     8. Dislikes(string)
-    9. Admission Date(date)
+    9. Admission Date(string)
   * new-animal component with form and button with click function that creates a new Animal class object and adds it to array of existing animals.
   * update-animal component that contains ngModel relationships with existing animal attributes to update them dynamically.
   * animal-list component that lists all current animal objects and contains buttons to trigger the update component.
@@ -60,3 +60,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 4. Future Changes
   * Location selection for new animal and update forms should be a select form.
+  * Likes/Dislikes could be refactored to array format to allow multiples.
+  * Age auto updates.
+  * Caretaker total dynamically updates.

@@ -1,4 +1,17 @@
 <h3>All Animals</h3>
+
+<select (change)='onAgeChange($event.target.value)'>
+  <label>Filter By Age</label>
+  <option value='all'>All Animals</option>
+  <option value='<=2'>Animals younger than or equal to 2 years old</option>
+  <option value='>2'>Animals older than 2 years old</option>
+</select>
+<select (change)='onDietChange($event.target.value)'>
+  <label>Filter By Diet</label>
+  <option value='all'>All Animals</option>
+  <option value='Not Meat Eaters'>Not Meat Eaters</option>
+  <option value='Meat Eaters'>Meat Eaters</option>
+</select>
 <table class='table-striped table-bordered'>
   <tr>
     <th>Name</th>
@@ -12,7 +25,7 @@
     <th>Date Received</th>
     <th>Update</th>
   </tr>
-  <tr *ngFor='let animal of childAnimalList'>
+  <tr *ngFor='let animal of childAnimalList | agePipe: ageCondition | dietPipe: dietCondition'>
     <td>{{animal.animalName}}</td>
     <td>{{animal.age}}</td>
     <td>{{animal.diet}}</td>
@@ -25,3 +38,4 @@
     <td><button (click)='updateAnimal(animal)' class='btn btn-info'>Update</button></td>
   </tr>
 </table>
+<h5>Total Caretakers Needed: {{this.caretakerTotal}}</h5>

@@ -14,6 +14,14 @@ export class AppComponent {
     new Animal('Peanut', 1, 'Omnivore', 'Some Other Place', 2, 'Female', 'Nickelback', 'Manually creating database entries'),
   ];
   selectedAnimal = null;
+  caretakerTotal = 0;
+
+  ngOnInit(){
+    var declaration = this;
+    this.animals.forEach(function(animal){
+      declaration.caretakerTotal += animal.caretakers;
+    })
+  }
 
   updateAnimal(animal){
     this.selectedAnimal = animal;
